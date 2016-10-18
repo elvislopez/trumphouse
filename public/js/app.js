@@ -1,29 +1,25 @@
 /*
  * app.js, code for Trumphouse game.
+ * module pattern
+ * MVC patterns
+ * "Fart in the elevator" pattern
  */
+console.log('in app.js'); //debugging line
 
- console.log( 'game ready' );
+var game = ( function () {
 
-function counter ( amount ) {
+	var trump = {}; //object, trump character
 
-	if ( isNaN(amount) == true ) {
+	var bricks = []; //array of objects
 
-		console.log("please type a number!");
+	var arena = {}; // object, entire game canvas
 
-		return;
-	} // end of test for string
+	return{
+		trump: trump,
+		bricks: bricks,
+		arena: arena
+	};
 
-	if ( amount < 1 ) {
-		console.log("please type in a number greater than zero");
-		return;
-	} // end of negative number test
+} ) ();
 
-	console.log("you have a number, counting...");
-
- 	for (var i = 0; i < amount; i++ ) {
-
- 		console.log( 'counted to;' + i );
-	} // end of "for" loop
-
-} //end of function
-
+console.log('in app.js');

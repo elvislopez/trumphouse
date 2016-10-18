@@ -3,3 +3,82 @@
 body {
 	background-color: #aaccaa;
 }
+
+#game-canvas {
+	position: relative;
+	/**/
+	background-image: url('../img/arena/bkgnd_1992.png');
+	width: 700px;
+	height: 300px;
+	}
+
+#trump{
+	position: absolute;
+	background-image: url('../img/players/trump.png');
+
+	top: 125px;
+	left: 0px;
+}
+
+.game-character{
+	position: absolute;
+	height: 50px; 
+	width: 50px;
+	background-size: 100% 100%;
+
+}
+#white-house{
+	position: absolute;
+	background-image: url('../img/arena/whitehouse.png');
+	height: 300px; /* width of background image */
+	width: 150px; /* same height as game canvas */
+	right: 0; /* position on r.h. side of screen */
+}
+
+#clinton{
+	position: absolute;
+	background-image: url('../img/bricks/clinton.png');
+
+	top: 0px;
+	left: 500px;
+}
+
+#cruz{
+	position: absolute;
+	background-image: url('../img/bricks/cruz.png');
+
+	top: 50px;
+	left: 500px;
+
+}
+
+#kasich{
+	position: absolute;
+	background-image: url('../img/bricks/kasich.png');
+	top: 100px;
+	left: 500px;
+
+}
+
+#sanders{
+	position: absolute;
+	background-image: url('../img/bricks/sanders.png');
+	top: 150px;
+	left: 500px;
+
+}
+
+#stein{
+	position: absolute;
+	background-image: url('../img/bricks/stein.png');
+	top: 200px;
+	left: 500px;
+}
+
+#johnson{
+	position: absolute;
+	background-image: url('../img/bricks/johnson.png');
+	top: 250px;
+	left: 500px;
+
+}
