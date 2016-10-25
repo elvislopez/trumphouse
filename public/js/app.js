@@ -53,7 +53,7 @@ var game = ( function () {
 //view stuff
 function initView () {
 	console.log('in initView');
-}
+};
 
 
 /**
@@ -82,7 +82,7 @@ function checkKey(e) {
        console.log('right arrow pressed');
     }
 
-} //end of checkKey
+}; //end of checkKey
 
 /**
 * the main animation loop
@@ -104,22 +104,15 @@ var animateId = null; //starts without animating
 function initController (){ 
 	console.log('in initController');
 
-	animateId = setInterval(
-		function () { // a closure
-		gameLoop();
-	}, 100
-	); // end of setInterval()
-
-	//if a key is pressed, run the function checkKey()
 	document.onkeydown = checkKey;
 
-}; //end initcontroller
+};
 
 //main program
 
 function start () {
 
-	if ( animateId === null); {
+	if ( animateId === null) {
 	animateId = setInterval(
 	function () {
 		gameLoop();
@@ -139,7 +132,7 @@ function stop () {
 *-----------------------------------------
 */
 function isStarted () {
-	if ( animateId !== null) {
+	if ( animateId !== null ) {
 		return true;
 	} else {
 		return false;
