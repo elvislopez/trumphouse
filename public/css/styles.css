@@ -3,8 +3,24 @@
 body {
 	background-color: #aaccaa;
 }
+/* game ui elements*/
+
+#ui-elements{
+	width: 692px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 4px;
+	border-top: 2px solid black;
+	color: white;
+	font-size: 16px;
+	background-color: #666;
+
+}
+/*game elements*/
 
 #game-canvas {
+	border: 2px solid black;
 	position: relative;
 	/**/
 	background-image: url('../img/arena/bkgnd_1992.png');
